@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Technologies and Image Generative Tools Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        #background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .column {
+            width: 450px;
+            margin: 20px;
+            background-color: rgba(51, 51, 51, 0.5);
+            z-index: 1;
+            position: relative;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .image:hover {
+            box-shadow: 0 0 0 4px white, 0 0 0 0px transparent;
+            border-radius: 4px;
+        }
+        .text-content {
+            text-align: center;
+        }
+        h1, h2 {
+            color: #FFF;
+            margin: 10px 0;
+        }
+        h1 {
+            margin: 20px 0 10px 0;
+            font-size: 24px;
+        }
+        p {
+            color: #CCC;
+            margin: 0;
+        }
+        .rainbow-text {
+            background: linear-gradient(to right, violet, mediumblue, cyan, green, yellow, orange, red, violet, mediumblue, cyan, green);
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            background-size: 340% 100%;
+            animation: gradientMove 8s linear infinite;
+        }
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-image: linear-gradient(to right, #666 5px, transparent 5px);
+            background-size: 10px 1px;
+            margin: 20px 0;
+        }
+        .newsletter-intro {
+            background-color: #505050;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            margin: 0px 0 20px 0;
+        }
+        .columns-container {
+            display: flex;
+            position: relative;
+            left: 150px; /* 150 pixels from the left border */
+            transform: translateX(0%);
+            width: 100%;
+            height: fit-content;
+            transition: transform 0.3s ease;
+        }
+        .columns-container.swipe-left {
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Animation Container -->
+    <div id="background-animation"></div>
+
+    <div class="columns-container" id="columnsContainer">
+        <!-- First Column: AI Video Technologies -->
+        <div class="column">
+            <h1><span class="rainbow-text">Latest</span> AI Video Technologies</h1>
+            <div class="newsletter-intro">
+                AI Video Technologies Newsletter
+            </div>
+
+            <!-- Kling -->
+            <div class="flex-container">
+                <h2>Kling</h2>
+                <a href="https://huggingface.co/spaces/Kling-Art/Kling" target="_blank">
+                    <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8249aea8-d589-49c8-bb80-443cb67d4d9a_600x338.gif" alt="Kling" class="image">
+                </a>
+                <div class="text-content">
+                    <p>Kling is an AI art generator that focuses on creating stylized images. It offers a variety of style presets and allows customization based on different art influences, making it great for creating unique and vivid digital art pieces. Kling can also be used for video editing, adding effects and transitions to enhance your footage.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Minimax -->
+            <div class="flex-container">
+                <h2>Minimax</h2>
+                <a href="https://hailuoai.com/" target="_blank">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5e1a497a-6b21-4e04-892a-06cc3fc58a7c/di88ilm-11cc8a78-0f07-4c89-8eaf-69ed9e64fa8b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVlMWE0OTdhLTZiMjEtNGUwNC04OTJhLTA2Y2MzZmM1OGE3Y1wvZGk4OGlsbS0xMWNjOGE3OC0wZjA3LTRjODktOGVhZi02OWVkOWU2NGZhOGIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.k0SJbYUcgnAKEPd0JBw4b1976XhXC5P4zVjc65MiWYk" alt="Minimax" class="image">
+                </a>
+                <div class="text-content">
+                    <p>Minimax, part of Hailuo AI, is an AI-driven tool for generating images and artwork from text prompts. It focuses on high-quality output suitable for professional settings like graphic design and digital illustration. Minimax can also be used for video content creation, providing advanced image generation capabilities.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Dreamachine -->
+            <div class="flex-container">
+                <h2>Dreamachine</h2>
+                <a href="https://lumalabs.ai/dream-machine" target="_blank">
+                    <div style="position: relative; width: 100%; height: 169px; overflow: hidden;">
+                        <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;" class="image">
+                            <source src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/2.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </a>
+                <div class="text-content">
+                    <p>Dreamachine uses AI to generate surreal and imaginative images from textual descriptions. Perfect for artists and creators looking to explore unique and abstract visual styles, Dreamachine can also be used to create dynamic video content with its high-quality image generation capabilities.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Luma -->
+            <div class="flex-container">
+                <h2>Luma</h2>
+                <a href="https://lumalabs.ai/" target="_blank">
+                    <div style="position: relative; width: 100%; height: 300px; overflow: hidden;">
+                        <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;" class="image">
+                            <source src="https://cdn-luma.com/public/lumalabs.ai/june-12-launch-dream-machine-high-res/assets/dream-machine/featured/videos/2.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </a>
+                <div class="text-content">
+                    <p>Luma offers a suite of AI tools for video creation, including Dream Machine for surreal imagery and other tools for video editing and enhancement. Luma's platform is designed for professionals who need high-quality video solutions, providing a range of features to streamline the video production process.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <!-- Second Column: Image Generative Tools -->
+        <div class="column">
+            <h1><span class="rainbow-text">Latest</span> Image Generative Tools</h1>
+            <div class="newsletter-intro">
+                Image Generative Tools Newsletter
+            </div>
+
+            <!-- MidJourney -->
+            <div class="flex-container">
+                <h2>MidJourney</h2>
+                <a href="https://midjourney.com/" target="_blank">
+                    <img src="https://midjourney.com/static/images/logo.png" alt="MidJourney" class="image">
+                </a>
+                <div class="text-content">
+                    <p>MidJourney is a powerful AI image generation tool that creates detailed and high-quality images from textual prompts. It is widely used by artists, designers, and content creators to bring their visions to life.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- DALL-E -->
+            <div class="flex-container">
+                <h2>DALL-E</h2>
+                <a href="https://openai.com/product/dall-e-2" target="_blank">
+                    <img src="https://assets-global.website-files.com/6077b3f65420413db450044c/628823576562101d54085344_dall-e-logo-2.svg" alt="DALL-E" class="image">
+                </a>
+                <div class="text-content">
+                    <p>DALL-E is an AI system developed by OpenAI that generates images and art from a description in natural language. It is known for its ability to create highly detailed and creative visuals.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Stable Diffusion -->
+            <div class="flex-container">
+                <h2>Stable Diffusion</h2>
+                <a href="https://stability.ai/stablediffusion" target="_blank">
+                    <img src="https://stability.ai/content/images/logos/stable-diffusion-logo.png" alt="Stable Diffusion" class="image">
+                </a>
+                <div class="text-content">
+                    <p>Stable Diffusion is an open-source AI model that generates images from text descriptions. It is known for its flexibility and the quality of the images it produces, making it popular among developers and artists.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Krea -->
+            <div class="flex-container">
+                <h2>Krea</h2>
+                <a href="https://krea.ai/" target="_blank">
+                    <img src="https://krea.ai/assets/images/logo.png" alt="Krea" class="image">
+                </a>
+                <div class="text-content">
+                    <p>Krea is an AI-powered image generation tool that allows users to create high-quality images with just a few clicks. It offers a user-friendly interface and a wide range of customization options.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Three.js and Animation Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script>
+        var camera, scene, renderer, particles, control;
+        const assetPath = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/';
+
+        init();
+
+        function init() {
+            clock = new THREE.Clock();
+
+            renderer = new THREE.WebGLRenderer({ alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.getElementById('background-animation').appendChild(renderer.domElement);
+
+            scene = new THREE.Scene();
+
+            camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 100);
+            camera.position.z = 4;
+            scene.add(camera);
+
+            light = new THREE.DirectionalLight(0xffffff, 1.0);
+            light.position.set(-1, 0, 1);
+            scene.add(light);
+
+            control = new THREE.OrbitControls(camera, renderer.domElement);
+
+            const textures = [
+                'smoke_01.png',
+                'smoke_02.png',
+                'smoke_03.png'
+            ];
+            const materials = textures.map(texPath => {
+                return new THREE.MeshLambertMaterial({
+                    color: 0xffffff,
+                    depthWrite: false,
+                    map: new THREE.TextureLoader().setPath(assetPath).load(texPath),
+                    transparent: true
+                });
+            });
+
+            const geometry = new THREE.PlaneGeometry(5, 5);
+            particles = [];
+
+            const size = 5;
+
+            for (let i = 0; i < 40; i++) {
+                const materialIndex = Math.floor(Math.random() * materials.length);
+                const particle = new THREE.Mesh(geometry, materials[materialIndex]);
+                particle.position.set(
+                    (Math.random() - 0.5) * size,
+                    (Math.random() - 0.5) * size,
+                    (Math.random() - 0.5) * size
+                );
+                particle.rotation.z = Math.random() * Math.PI * 2;
+                scene.add(particle);
+                particles.push(particle);
+            }
+
+            renderer.setAnimationLoop(update);
+        }
+
+        function update() {
+            const dt = clock.getDelta();
+            if (particles) {
+                particles.forEach(particle => {
+                    const z = particle.rotation.z;
+                    particle.lookAt(camera.position);
+                    particle.rotation.z = z + dt * 0.1;
+                });
+            }
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('resize', function () {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // Swipe Gesture Handling
+        let startX, startY, endX, endY;
+        const threshold = 50;
+
+        document.addEventListener('touchstart', function(event) {
+            startX = event.touches[0].clientX;
+            startY = event.touches[0].clientY;
+        }, { passive: true });
+
+        document.addEventListener('touchend', function(event) {
+            endX = event.changedTouches[0].clientX;
+            endY = event.changedTouches[0].clientY;
+
+            const deltaX = startX - endX;
+            const deltaY = startY - endY;
+
+            if (Math.abs(deltaX) > Math.abs(deltaY)) { // Horizontal swipe
+                if (deltaX > threshold) { // Swipe left
+                    document.getElementById('columnsContainer').classList.add('swipe-left');
+                } else if (deltaX < -threshold) { // Swipe right
+                    document.getElementById('columnsContainer').classList.remove('swipe-left');
+                }
+            }
+        }, { passive: true });
+
+        document.addEventListener('mousedown', function(event) {
+            startX = event.clientX;
+            startY = event.clientY;
+        });
+
+        document.addEventListener('mouseup', function(event) {
+            endX = event.clientX;
+            endY = event.clientY;
+
+            const deltaX = startX - endX;
+            const deltaY = startY - endY;
+
+            if (Math.abs(deltaX) > Math.abs(deltaY)) { // Horizontal swipe
+                if (deltaX > threshold) { // Swipe left
+                    document.getElementById('columnsContainer').classList.add('swipe-left');
+                } else if (deltaX < -threshold) { // Swipe right
+                    document.getElementById('columnsContainer').classList.remove('swipe-left');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
